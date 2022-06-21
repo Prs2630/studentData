@@ -24,6 +24,19 @@ router.post('/student', async(req, res) => {
 
 })
 
+router.get('/displaystudent', async(req, res) => {
+    
+    let students=await Student.find();
+    if(students.length>0){
+     res.send(students)
+    }
+    else{
+     res.send({result:"no students found"})
+    }
+ 
+ })
+ 
+
 
 
 
