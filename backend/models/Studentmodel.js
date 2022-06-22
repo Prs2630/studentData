@@ -18,7 +18,7 @@ const studentSchema = new mongoose.Schema({
 
     },
     education: {
-        type: String,
+        type:   String,
         required: [true, " education cannot be empty"]
 
     }
